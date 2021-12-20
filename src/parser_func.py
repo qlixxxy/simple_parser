@@ -14,9 +14,7 @@ class PythonScriptsParser(IterableUrl):
 
 if __name__ == '__main__':
     with PythonScriptsParser('https://python-scripts.com/beautifulsoup-html-parsing') as url:
-        print(url.parsed_data)
         url.parse()
-        print(url.parsed_data)
         for i in url:
             print(i)
         print(len(url.parsed_data))

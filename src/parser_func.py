@@ -12,11 +12,4 @@ class PythonScriptsParser(IterableUrl):
         self.parsed_data = [e.text for e in self.found_text]
         
 
-if __name__ == '__main__':
-    with PythonScriptsParser('https://python-scripts.com/beautifulsoup-html-parsing') as url:
-        url.parse()
-        for i in url:
-            print(i)
-        print(len(url.parsed_data))
-        print(url[0])
-        
+
